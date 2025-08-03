@@ -11,3 +11,5 @@ echo " "
 set -e
 
 cd /dev/block/by-name
+
+init_boot_a_device=$(readlink -f init_boot_a)

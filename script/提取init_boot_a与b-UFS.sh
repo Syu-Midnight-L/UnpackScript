@@ -15,3 +15,7 @@ cd /dev/block/by-name
 init_boot_a_device=$(readlink -f init_boot_a)
 
 init_boot_b_device=$(readlink -f init_boot_b)
+
+echo "init_boot_a镜像的实际位置在$boot_a_device"
+
+echo "init_boot_b镜像的实际位置在$boot_b_device"

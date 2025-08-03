@@ -7,3 +7,7 @@ echo "虚拟机无法使用"
 echo "适用于支持动态系统更新的设备"
 
 echo " "
+
+set -e
+
+cd /dev/block/by-name

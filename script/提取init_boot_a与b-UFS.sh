@@ -13,3 +13,5 @@ set -e
 cd /dev/block/by-name
 
 init_boot_a_device=$(readlink -f init_boot_a)
+
+init_boot_b_device=$(readlink -f init_boot_b)

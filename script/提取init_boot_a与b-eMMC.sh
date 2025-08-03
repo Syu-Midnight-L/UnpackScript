@@ -14,3 +14,6 @@ boot_device=$(find /dev/block/platform/ -name 'by-name' -type d)
 
 cd "$boot_device"
 
+init_boot_a_device=$(readlink -f init_boot_a)
+
+init_boot_b_device=$(readlink -f init_boot_b)

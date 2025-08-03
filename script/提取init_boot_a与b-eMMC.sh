@@ -22,4 +22,8 @@ echo "init_boot_a镜像的实际位置在$boot_a_device"
 
 echo "init_boot_b镜像的实际位置在$boot_b_device"
 
-dd if="$init_boot_a_device" 
+dd if="$init_boot_a_device" of=/sdcard/Download/init_boot_a.img
+
+dd if="$init_boot_b_device" of=/sdcard/Download/init_boot_b.img
+
+echo "提取完成，文件在/storage/emulated/0/Download/里"

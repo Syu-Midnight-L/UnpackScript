@@ -13,3 +13,5 @@ set -e
 boot_device=$(find dev/block/platform/ -name 'by-name' -type d)
 
 cd "$boot_device"
+
+boot_a_device=$(readlink)

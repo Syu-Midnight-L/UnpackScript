@@ -19,3 +19,5 @@ boot_a_device=$(readlink -f boot_a)
 boot_b_device=$(readlink -f boot_b)
 
 echo "boot_a镜像的实际位置在$boot_a_device"
+
+echo "boot_b镜像的实际位置在$boot_b_device"

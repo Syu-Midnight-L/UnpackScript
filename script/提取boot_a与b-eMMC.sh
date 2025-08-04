@@ -21,3 +21,9 @@ boot_b_device=$(readlink -f boot_b)
 echo "boot_a镜像的实际位置在$boot_a_device"
 
 echo "boot_b镜像的实际位置在$boot_b_device"
+
+dd if="boot_a_adevice" of=/sdcard/Download/boot_a.img
+
+dd if="boot_b_adevice" of=/sdcard/Download/boot_b.img
+
+echo "提取完成，文件在/storage/emulated/0/Download/里"

@@ -14,4 +14,6 @@ boot_device=$(find dev/block/platform/ -name 'by-name' -type d)
 
 cd "$boot_device"
 
-boot_a_device=$(readlink)
+boot_a_device=$(readlink -f boot_a)
+
+boot_b_device=$(readlink -f boot_b)
